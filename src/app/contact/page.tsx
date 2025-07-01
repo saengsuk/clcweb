@@ -13,7 +13,7 @@ export default function ContactPage() {
       <section className="bg-primary text-clean py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-3xl md:text-5xl font-serif font-bold mb-6">Contact Us</h1>
-          <p className="text-xl mb-0">We'd love to hear from you</p>
+          <p className="text-xl mb-0">We&apos;d love to hear from you</p>
         </div>
       </section>
 
@@ -34,7 +34,7 @@ export default function ContactPage() {
                     placeholder="Your name"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-primary font-medium mb-2">Email</label>
                   <input 
@@ -44,7 +44,7 @@ export default function ContactPage() {
                     placeholder="Your email address"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="subject" className="block text-primary font-medium mb-2">Subject</label>
                   <select 
@@ -59,7 +59,7 @@ export default function ContactPage() {
                     <option value="other">Other</option>
                   </select>
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-primary font-medium mb-2">Message</label>
                   <textarea 
@@ -69,7 +69,7 @@ export default function ContactPage() {
                     placeholder="Your message"
                   ></textarea>
                 </div>
-                
+
                 <button 
                   type="submit" 
                   className="bg-primary text-clean px-6 py-3 rounded-full hover:bg-opacity-90 transition-colors"
@@ -78,11 +78,11 @@ export default function ContactPage() {
                 </button>
               </form>
             </div>
-            
+
             {/* Contact Information */}
             <div>
               <h2 className="text-2xl md:text-3xl font-serif font-bold mb-6 text-primary">Contact Information</h2>
-              
+
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-serif font-bold mb-2 text-primary">Address</h3>
@@ -92,23 +92,23 @@ export default function ContactPage() {
                     <p>Jakarta, Indonesia 12345</p>
                   </address>
                 </div>
-                
+
                 <div>
                   <h3 className="text-xl font-serif font-bold mb-2 text-primary">Phone</h3>
                   <p>+62 123 456 7890</p>
                 </div>
-                
+
                 <div>
                   <h3 className="text-xl font-serif font-bold mb-2 text-primary">Email</h3>
                   <p>info@hartantofoundation.org</p>
                 </div>
-                
+
                 <div>
                   <h3 className="text-xl font-serif font-bold mb-2 text-primary">Hours</h3>
                   <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
                   <p>Saturday - Sunday: Closed</p>
                 </div>
-                
+
                 <div>
                   <h3 className="text-xl font-serif font-bold mb-2 text-primary">Follow Us</h3>
                   <div className="flex space-x-4">
@@ -149,7 +149,7 @@ export default function ContactPage() {
       <section className="py-16 px-4 bg-clean">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-serif font-bold mb-12 text-primary text-center">Frequently Asked Questions</h2>
-          
+
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-serif font-bold mb-2 text-primary">How can I donate to the Hartanto Foundation?</h3>
@@ -157,21 +157,21 @@ export default function ContactPage() {
                 You can donate through our website on the <Link href="/donate" className="text-accent hover:underline">Donate page</Link>, by mail, or by phone. We accept one-time and recurring donations.
               </p>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-serif font-bold mb-2 text-primary">How can I volunteer with the Hartanto Foundation?</h3>
               <p>
                 We welcome volunteers in various capacities. Please contact us through this form or email us at volunteer@hartantofoundation.org to learn about current opportunities.
               </p>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-serif font-bold mb-2 text-primary">How can I apply for a scholarship?</h3>
               <p>
                 Information about our scholarship programs and application process can be found on our <Link href="/scholarship" className="text-accent hover:underline">Scholarship page</Link>. You can also contact our education coordinator directly at scholarships@hartantofoundation.org.
               </p>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-serif font-bold mb-2 text-primary">How can I request a speaker for my event?</h3>
               <p>

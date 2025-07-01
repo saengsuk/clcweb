@@ -15,7 +15,7 @@ export default function ScholarshipPage() {
         <div className="container mx-auto max-w-5xl text-center">
           <h1 className="text-3xl md:text-5xl font-serif font-bold mb-6">Scholarship</h1>
           <p className="text-xl mb-4 font-medium italic">
-            "Each year, the centre hands out one-year scholarships as assistant nurses to 15 young people who are orphans or from broken homes and poor"
+            &quot;Each year, the centre hands out one-year scholarships as assistant nurses to 15 young people who are orphans or from broken homes and poor&quot;
           </p>
           <p className="text-sm opacity-80">
             Photo and Content Source: Achara A. (Jan 2017). Bangkok Post: Temple of Dawn offers a beacon of hope
@@ -73,36 +73,36 @@ export default function ScholarshipPage() {
       <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center">Student Success Story</h2>
-          
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="bg-white rounded-lg p-8 md:p-10 shadow-lg">
               <blockquote className="text-lg italic mb-6 text-primary font-medium">
-                "Father [Mr Hartanto] doesn't solve all our problems for us, but guides us to a solution. We need to think on our own but if we feel helpless, he is there for us to consult and seek advice."
+                &quot;Father [Mr Hartanto] doesn&apos;t solve all our problems for us, but guides us to a solution. We need to think on our own but if we feel helpless, he is there for us to consult and seek advice.&quot;
               </blockquote>
-              
+
               <div className="space-y-4 text-lg leading-relaxed">
                 <blockquote className="italic text-gray-700 border-l-4 border-accent pl-4">
                   <p className="mb-2">
-                    "When I was in Mathayom 4, my parents said they couldn't afford to send me to school anymore. But my teacher helped me get through to the final year of secondary."
+                    &quot;When I was in Mathayom 4, my parents said they couldn&apos;t afford to send me to school anymore. But my teacher helped me get through to the final year of secondary.&quot;
                   </p>
                   <p>
-                    "She said there was a place that could help me get educated and it was here," 
+                    &quot;She said there was a place that could help me get educated and it was here,&quot; 
                   </p>
                   <footer className="text-sm text-gray-600 mt-2">— Ms Darunee, who is from a boat-dwelling family in Samut Sakhon</footer>
                 </blockquote>
-                
+
                 <p className="text-gray-700">
                   She enrolled in the ninth batch of students at the centre three years ago. After a one-year assistant nursing course at Siam University in collaboration with Thonburi Hospital, she has been working as a nurse at Thonburi 1 Hospital for two years.
                 </p>
               </div>
-              
+
               <div className="mt-6 p-4 bg-accent/10 rounded-lg">
                 <p className="italic text-gray-700">
-                  "Some were abused or were orphans. The center has helped them to find their feet again, with renewed confidence and independence" said Ms. Darunee (a student)
+                  &quot;Some were abused or were orphans. The center has helped them to find their feet again, with renewed confidence and independence&quot; said Ms. Darunee (a student)
                 </p>
               </div>
             </div>
-            
+
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/images/scholarship/darunee.jpg"
@@ -116,7 +116,7 @@ export default function ScholarshipPage() {
               </div>
             </div>
           </div>
-          
+
           <div className="mt-8 text-center">
             <p className="text-sm text-gray-600 italic">
               Photo Source: N.A. (March 2016). Flexible Learning Strategies: 127 disadvantaged girls successfully became nurses at a Community Learning Center in a temple (Thailand)
@@ -131,7 +131,7 @@ export default function ScholarshipPage() {
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center flex items-center justify-center gap-3">
             🎓 Scholarship Details
           </h2>
-          
+
           {/* Scholarship Details Table */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-16">
             <div className="overflow-x-auto">
@@ -146,11 +146,11 @@ export default function ScholarshipPage() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Duration</td>
-                    <td className="px-6 py-4" colSpan="2">1 year</td>
+                    <td className="px-6 py-4" colSpan={2}>1 year</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Extra Curriculum Subjects</td>
-                    <td className="px-6 py-4" colSpan="2">
+                    <td className="px-6 py-4" colSpan={2}>
                       <ul className="space-y-1">
                         <li>• English Language</li>
                         <li>• Computer</li>
@@ -162,15 +162,15 @@ export default function ScholarshipPage() {
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Other Benefits</td>
-                    <td className="px-6 py-4" colSpan="2">Free Accommodation, Food & Other Expenses</td>
+                    <td className="px-6 py-4" colSpan={2}>Free Accommodation, Food & Other Expenses</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Course Fee</td>
-                    <td className="px-6 py-4" colSpan="2"><span className="text-green-600 font-semibold">Free</span></td>
+                    <td className="px-6 py-4" colSpan={2}><span className="text-green-600 font-semibold">Free</span></td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Yearly Intake</td>
-                    <td className="px-6 py-4" colSpan="2">
+                    <td className="px-6 py-4" colSpan={2}>
                       <ul className="space-y-1">
                         <li><strong>February:</strong> Receive applications</li>
                         <li><strong>March:</strong> Interview</li>
@@ -181,7 +181,7 @@ export default function ScholarshipPage() {
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Qualifications</td>
-                    <td className="px-6 py-4" colSpan="2">
+                    <td className="px-6 py-4" colSpan={2}>
                       <ol className="space-y-1">
                         <li>1. Orphan (No Parents)</li>
                         <li>2. (Very) poor</li>
@@ -191,16 +191,16 @@ export default function ScholarshipPage() {
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Upon Graduation</td>
-                    <td className="px-6 py-4" colSpan="2">
+                    <td className="px-6 py-4" colSpan={2}>
                       <span className="text-green-600 font-semibold">Guaranteed full-time employment at hospitals for Assistant Nursing Curriculum</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Options</td>
-                    <td className="px-6 py-4" colSpan="2">
+                    <td className="px-6 py-4" colSpan={2}>
                       <ol className="space-y-2">
-                        <li>1. Full Scholarship in Bachelor's degree in Nursing at Siam University</li>
-                        <li>2. Full Scholarship in Bachelor's degree in Electronic and Electrical or others</li>
+                        <li>1. Full Scholarship in Bachelor&apos;s degree in Nursing at Siam University</li>
+                        <li>2. Full Scholarship in Bachelor&apos;s degree in Electronic and Electrical or others</li>
                       </ol>
                     </td>
                   </tr>
@@ -215,7 +215,7 @@ export default function ScholarshipPage() {
       <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center">Get Involved</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             {/* Volunteer Section */}
             <div className="bg-white rounded-lg p-8 shadow-lg">

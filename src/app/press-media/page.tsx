@@ -24,7 +24,7 @@ export default function PressMediaPage() {
       <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center">Press Coverage</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             {/* Thai Media Coverage */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -74,7 +74,7 @@ export default function PressMediaPage() {
       <section className="py-16 px-4 bg-clean">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center">📚 Selected Articles</h2>
-          
+
           <div className="space-y-12">
             {/* Article 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -95,7 +95,7 @@ export default function PressMediaPage() {
                     <strong>Source:</strong> The National.ae
                   </p>
                   <p className="text-lg leading-relaxed mb-6">
-                    An inspiring story about young women finding hope and opportunity through the temple's community learning center programs.
+                    An inspiring story about young women finding hope and opportunity through the temple&apos;s community learning center programs.
                   </p>
                   <div className="flex gap-4">
                     <a 
@@ -119,13 +119,13 @@ export default function PressMediaPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="p-8 flex flex-col justify-center md:order-first">
                   <h3 className="text-2xl font-bold text-primary mb-4">
-                    2. 3 remarkably inspiring people I've met in 4 months of traveling
+                    2. 3 remarkably inspiring people I&apos;ve met in 4 months of traveling
                   </h3>
                   <p className="text-gray-600 mb-4 font-medium">
                     <strong>Source:</strong> Wordpress.com
                   </p>
                   <p className="text-lg leading-relaxed mb-6">
-                    A traveler's perspective on meeting remarkable individuals making a difference in their communities, including work at our center.
+                    A traveler&apos;s perspective on meeting remarkable individuals making a difference in their communities, including work at our center.
                   </p>
                   <div className="flex gap-4">
                     <a 
@@ -171,7 +171,7 @@ export default function PressMediaPage() {
                     <strong>Source:</strong> Embassy of Japan in Thailand
                   </p>
                   <p className="text-lg leading-relaxed mb-6">
-                    Official documentation of the Japanese Embassy's support for constructing community learning facilities for vulnerable children.
+                    Official documentation of the Japanese Embassy&apos;s support for constructing community learning facilities for vulnerable children.
                   </p>
                   <div className="flex gap-4">
                     <a 

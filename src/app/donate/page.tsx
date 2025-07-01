@@ -39,18 +39,18 @@ export default function DonatePage() {
       <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-serif font-bold mb-12 text-primary text-center">Ways to Give</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-clean p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-bold mb-4 text-primary">One-Time Donation</h3>
               <p className="mb-4">
-                Make an immediate impact with a one-time gift of any amount. Your contribution will be directed to where it's needed most.
+                Make an immediate impact with a one-time gift of any amount. Your contribution will be directed to where it&apos;s needed most.
               </p>
               <div className="bg-accent text-clean px-4 py-2 rounded-full inline-block font-medium">
                 Donate Now
               </div>
             </div>
-            
+
             <div className="bg-clean p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-bold mb-4 text-primary">Monthly Giving</h3>
               <p className="mb-4">
@@ -60,7 +60,7 @@ export default function DonatePage() {
                 Become a Monthly Donor
               </div>
             </div>
-            
+
             <div className="bg-clean p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-bold mb-4 text-primary">Corporate Partnerships</h3>
               <p className="mb-4">
@@ -73,7 +73,7 @@ export default function DonatePage() {
                 Contact Us to Learn More →
               </Link>
             </div>
-            
+
             <div className="bg-clean p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-bold mb-4 text-primary">Legacy Giving</h3>
               <p className="mb-4">
@@ -94,7 +94,7 @@ export default function DonatePage() {
       <section className="py-16 px-4 bg-clean">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-serif font-bold mb-12 text-primary text-center">Your Impact</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="text-4xl font-bold text-accent mb-4">$50</div>
@@ -102,14 +102,14 @@ export default function DonatePage() {
                 Provides a day of trauma-informed care and meditation training for a survivor
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="text-4xl font-bold text-accent mb-4">$250</div>
               <p>
                 Funds a month of vocational training to help a survivor build job skills
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="text-4xl font-bold text-accent mb-4">$1,000</div>
               <p>
@@ -117,7 +117,7 @@ export default function DonatePage() {
               </p>
             </div>
           </div>
-          
+
           <div className="text-center">
             <p className="text-lg mb-6">
               Every donation, regardless of size, contributes to our mission of combating human trafficking and supporting survivors.
@@ -136,7 +136,7 @@ export default function DonatePage() {
           <p className="text-lg mb-8 text-center">
             The Hartanto Foundation is committed to financial transparency and accountability. We ensure that your donations are used effectively and efficiently to support our mission.
           </p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-clean p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-bold mb-4 text-primary">Financial Reports</h3>
@@ -150,7 +150,7 @@ export default function DonatePage() {
                 View Our Annual Report →
               </Link>
             </div>
-            
+
             <div className="bg-clean p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-bold mb-4 text-primary">Program Effectiveness</h3>
               <p className="mb-4">
