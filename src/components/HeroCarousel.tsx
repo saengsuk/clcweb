@@ -24,28 +24,28 @@ interface SlideProps {
 // Sample slides data
 const slides: SlideProps[] = [
   {
-    image: '/next.svg', // Placeholder image
+    image: '/images/slider/02.jpg',
     headline: 'Fighting Human Trafficking Together',
     subtitle: 'Join our mission to create a world free from exploitation',
     ctaText: 'Learn More',
     ctaLink: '/mission',
   },
   {
-    image: '/next.svg', // Placeholder image
+    image: '/images/slider/01.jpg',
     headline: 'Empowering Through Education',
     subtitle: 'Our scholarship programs help survivors rebuild their lives',
     ctaText: 'Scholarship Programs',
     ctaLink: '/scholarship',
   },
   {
-    image: '/next.svg', // Placeholder image
+    image: '/images/slider/02.jpg',
     headline: 'Find Peace at Our Meditation Center',
     subtitle: 'A sanctuary for healing and inner transformation',
     ctaText: 'Visit Center',
     ctaLink: '/meditation-center',
   },
   {
-    image: '/next.svg', // Placeholder image
+    image: '/images/slider/01.jpg',
     headline: 'Make a Difference Today',
     subtitle: 'Your support helps us continue our vital work',
     ctaText: 'Donate Now',
@@ -69,8 +69,8 @@ const HeroCarousel = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-full">
-              {/* Image with gradient overlay */}
-              <div className="absolute inset-0 bg-black/50 z-10" />
+              {/* Image with enhanced gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/70 to-black/30 z-10" />
               <Image
                 src={slide.image}
                 alt={slide.headline}
@@ -81,15 +81,15 @@ const HeroCarousel = () => {
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4 md:px-12">
-                <h1 className="text-3xl md:text-5xl font-serif font-bold text-clean mb-4 max-w-4xl">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 max-w-5xl leading-tight text-shadow-lg">
                   {slide.headline}
                 </h1>
-                <p className="text-lg md:text-xl text-clean mb-8 max-w-2xl">
+                <p className="text-xl md:text-2xl lg:text-3xl text-white mb-10 max-w-3xl font-medium leading-relaxed text-shadow-lg">
                   {slide.subtitle}
                 </p>
                 <Link
                   href={slide.ctaLink}
-                  className="bg-accent text-clean px-6 py-3 rounded-full hover:bg-opacity-90 transition-colors text-lg font-medium"
+                  className="bg-accent text-white px-10 py-4 rounded-full hover:bg-accent/90 transition-all duration-300 text-xl font-bold shadow-2xl hover:shadow-accent/40 hover:scale-105 transform"
                 >
                   {slide.ctaText}
                 </Link>

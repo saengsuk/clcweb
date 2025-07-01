@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
-  title: 'Scholarship Programs | Hartanto Foundation',
-  description: 'Our scholarship programs provide educational opportunities for survivors of human trafficking to rebuild their lives.',
+  title: 'Scholarship Programs | CLC Foundation',
+  description: 'Each year, the centre hands out one-year scholarships as assistant nurses to 25 young people who are orphans or from broken homes and poor.',
 };
 
 export default function ScholarshipPage() {
@@ -11,128 +12,260 @@ export default function ScholarshipPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="bg-primary text-clean py-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-6">Scholarship Programs</h1>
-          <p className="text-xl mb-0">Empowering survivors through education and opportunity</p>
+        <div className="container mx-auto max-w-5xl text-center">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-6">Scholarship</h1>
+          <p className="text-xl mb-4 font-medium italic">
+            "Each year, the centre hands out one-year scholarships as assistant nurses to 15 young people who are orphans or from broken homes and poor"
+          </p>
+          <p className="text-sm opacity-80">
+            Photo and Content Source: Achara A. (Jan 2017). Bangkok Post: Temple of Dawn offers a beacon of hope
+          </p>
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* Main Scholarship Program */}
       <section className="py-16 px-4 bg-clean">
-        <div className="container mx-auto max-w-4xl">
-          <div className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold mb-6 text-primary">Education as Empowerment</h2>
-            <p className="text-lg mb-4">
-              The Hartanto Foundation Scholarship Program was established to provide survivors of human trafficking with access to education and vocational training. We believe that education is a powerful tool for empowerment and sustainable recovery.
-            </p>
-            <p className="text-lg mb-0">
-              Our scholarships cover a range of educational opportunities, from basic literacy and high school completion to vocational training and university degrees. Each scholarship is tailored to the individual's needs, goals, and circumstances.
-            </p>
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-primary">Assistant Nurse Scholarships</h2>
+              <p className="text-lg leading-relaxed mb-6">
+                Each year, the center hands out one-year scholarships as assistant nurses to 25 young people who are orphans or from broken homes and poor. Among them are needy youths and children vulnerable to human trafficking or domestic violence.
+              </p>
+              <p className="text-lg leading-relaxed">
+                The center has also introduced state-certified study courses for young people to learn some basic skills like computer work, English, Thai traditional dance, food and soap carving during the weekends.
+              </p>
+            </div>
+            <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/scholarship/01.jpg"
+                alt="CLC Foundation Scholarship Program"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Course Details */}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="relative h-80 rounded-lg overflow-hidden shadow-lg md:order-first">
+              <Image
+                src="/images/scholarship/02.jpg"
+                alt="State-certified study courses"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-primary">State-Certified Study Courses</h2>
+              <p className="text-lg leading-relaxed mb-4">
+                The course runs between 50 and 60 hours and graduates receive a certificate in March every year. The center has been supplied with a list of needy girls by the Ministry of Education.
+              </p>
+              <p className="text-lg leading-relaxed">
+                This year the Ministry of Social Development will also send a similar list to the center.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Scholarship Types */}
+      {/* Ms. Darunee's Story */}
       <section className="py-16 px-4 bg-background">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold mb-12 text-primary text-center">Our Scholarship Programs</h2>
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center">Student Success Story</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-clean p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-serif font-bold mb-4 text-primary">Academic Scholarships</h3>
-              <p className="mb-0">
-                Full and partial scholarships for high school, college, and university education, including tuition, books, and living expenses.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-white rounded-lg p-8 md:p-10 shadow-lg">
+              <blockquote className="text-lg italic mb-6 text-primary font-medium">
+                "Father [Mr Hartanto] doesn't solve all our problems for us, but guides us to a solution. We need to think on our own but if we feel helpless, he is there for us to consult and seek advice."
+              </blockquote>
+              
+              <div className="space-y-4 text-lg leading-relaxed">
+                <blockquote className="italic text-gray-700 border-l-4 border-accent pl-4">
+                  <p className="mb-2">
+                    "When I was in Mathayom 4, my parents said they couldn't afford to send me to school anymore. But my teacher helped me get through to the final year of secondary."
+                  </p>
+                  <p>
+                    "She said there was a place that could help me get educated and it was here," 
+                  </p>
+                  <footer className="text-sm text-gray-600 mt-2">— Ms Darunee, who is from a boat-dwelling family in Samut Sakhon</footer>
+                </blockquote>
+                
+                <p className="text-gray-700">
+                  She enrolled in the ninth batch of students at the centre three years ago. After a one-year assistant nursing course at Siam University in collaboration with Thonburi Hospital, she has been working as a nurse at Thonburi 1 Hospital for two years.
+                </p>
+              </div>
+              
+              <div className="mt-6 p-4 bg-accent/10 rounded-lg">
+                <p className="italic text-gray-700">
+                  "Some were abused or were orphans. The center has helped them to find their feet again, with renewed confidence and independence" said Ms. Darunee (a student)
+                </p>
+              </div>
             </div>
             
-            <div className="bg-clean p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-serif font-bold mb-4 text-primary">Vocational Training</h3>
-              <p className="mb-0">
-                Funding for vocational and technical training programs that lead to sustainable employment opportunities.
-              </p>
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/scholarship/darunee.jpg"
+                alt="Ms. Darunee - Scholarship recipient and nurse"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p className="text-white font-medium">Ms. Darunee</p>
+                <p className="text-white/90 text-sm">Scholarship Recipient & Nurse</p>
+              </div>
             </div>
-            
-            <div className="bg-clean p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-serif font-bold mb-4 text-primary">Language & Literacy</h3>
-              <p className="mb-0">
-                Programs focused on language acquisition and basic literacy skills, providing essential foundations for further education.
-              </p>
-            </div>
-            
-            <div className="bg-clean p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-serif font-bold mb-4 text-primary">Entrepreneurship Grants</h3>
-              <p className="mb-0">
-                Support for survivors interested in starting their own businesses, including training, mentorship, and seed funding.
-              </p>
-            </div>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <p className="text-sm text-gray-600 italic">
+              Photo Source: N.A. (March 2016). Flexible Learning Strategies: 127 disadvantaged girls successfully became nurses at a Community Learning Center in a temple (Thailand)
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Application Process */}
+      {/* Detailed Scholarship Information */}
       <section className="py-16 px-4 bg-clean">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold mb-12 text-primary text-center">Application Process</h2>
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center flex items-center justify-center gap-3">
+            🎓 Scholarship Details
+          </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center">
-              <div className="bg-primary text-clean rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
-              <h3 className="text-xl font-serif font-bold mb-4 text-primary">Initial Consultation</h3>
-              <p>
-                Meet with our education coordinator to discuss your goals, interests, and educational background.
-              </p>
+          {/* Scholarship Details Table */}
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-16">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="px-6 py-4 text-left font-semibold">Curriculums</th>
+                    <th className="px-6 py-4 text-left font-semibold">Electronic and Electrical</th>
+                    <th className="px-6 py-4 text-left font-semibold">Assistant Nursing at Thonburi Hospital (Siam University)</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Duration</td>
+                    <td className="px-6 py-4" colSpan="2">1 year</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Extra Curriculum Subjects</td>
+                    <td className="px-6 py-4" colSpan="2">
+                      <ul className="space-y-1">
+                        <li>• English Language</li>
+                        <li>• Computer</li>
+                        <li>• Thai Dessert</li>
+                        <li>• Fruit and Soap Carving</li>
+                        <li>• Morality, Dhamma and Meditation<br /><span className="text-sm text-gray-600">(Mind & Self-Development)</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Other Benefits</td>
+                    <td className="px-6 py-4" colSpan="2">Free Accommodation, Food & Other Expenses</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Course Fee</td>
+                    <td className="px-6 py-4" colSpan="2"><span className="text-green-600 font-semibold">Free</span></td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Yearly Intake</td>
+                    <td className="px-6 py-4" colSpan="2">
+                      <ul className="space-y-1">
+                        <li><strong>February:</strong> Receive applications</li>
+                        <li><strong>March:</strong> Interview</li>
+                        <li><strong>April:</strong> Start Boarding</li>
+                        <li><strong>May:</strong> Start Curriculum</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Qualifications</td>
+                    <td className="px-6 py-4" colSpan="2">
+                      <ol className="space-y-1">
+                        <li>1. Orphan (No Parents)</li>
+                        <li>2. (Very) poor</li>
+                        <li>3. Finish High School (or aged 18–21)</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Upon Graduation</td>
+                    <td className="px-6 py-4" colSpan="2">
+                      <span className="text-green-600 font-semibold">Guaranteed full-time employment at hospitals for Assistant Nursing Curriculum</span>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-semibold text-primary bg-gray-50">Options</td>
+                    <td className="px-6 py-4" colSpan="2">
+                      <ol className="space-y-2">
+                        <li>1. Full Scholarship in Bachelor's degree in Nursing at Siam University</li>
+                        <li>2. Full Scholarship in Bachelor's degree in Electronic and Electrical or others</li>
+                      </ol>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-primary text-clean rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
-              <h3 className="text-xl font-serif font-bold mb-4 text-primary">Application Submission</h3>
-              <p>
-                Complete the scholarship application form with assistance from our support team if needed.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-primary text-clean rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
-              <h3 className="text-xl font-serif font-bold mb-4 text-primary">Review & Approval</h3>
-              <p>
-                Applications are reviewed by our scholarship committee, with decisions typically made within 4-6 weeks.
-              </p>
-            </div>
-          </div>
-          
-          <div className="text-center">
-            <p className="text-lg mb-6">
-              Our scholarship application process is designed to be supportive and trauma-informed. We provide assistance at every step to ensure that the process itself is empowering rather than overwhelming.
-            </p>
-            <Link 
-              href="/contact" 
-              className="inline-block bg-primary text-clean px-6 py-3 rounded-full hover:bg-opacity-90 transition-colors"
-            >
-              Contact Us to Learn More
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Volunteer and Donate Section */}
       <section className="py-16 px-4 bg-background">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold mb-12 text-primary text-center">Success Stories</h2>
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-primary text-center">Get Involved</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <blockquote className="bg-clean p-6 rounded-lg italic">
-              <p className="mb-4">
-                "The scholarship I received changed my life. I was able to complete my nursing degree and now work at a local hospital. Education gave me the independence and confidence I needed to rebuild my life."
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Volunteer Section */}
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md mb-6">
+                <Image
+                  src="/images/scholarship/03.jpg"
+                  alt="Volunteer opportunities at CLC Foundation"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-primary mb-4">Volunteer</h3>
+              <p className="text-lg leading-relaxed mb-4">
+                Our Community Learning Center Wat Arun welcomes volunteer involvement in a variety of areas and capacities.
               </p>
-              <footer className="font-medium">— Scholarship Recipient</footer>
-            </blockquote>
-            
-            <blockquote className="bg-clean p-6 rounded-lg italic">
-              <p className="mb-4">
-                "After years of having my dreams put on hold, the vocational training scholarship allowed me to learn computer skills and secure a stable job. I'm now financially independent and helping support my family."
+              <p className="text-lg leading-relaxed mb-6">
+                Volunteers may provide help to such things as: language instructions, cooking class, or helping to run special events.
               </p>
-              <footer className="font-medium">— Scholarship Recipient</footer>
-            </blockquote>
+              <Link 
+                href="/contact" 
+                className="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition-colors"
+              >
+                Contact Us for More Details
+              </Link>
+            </div>
+
+            {/* Donate Section */}
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md mb-6">
+                <Image
+                  src="/images/scholarship/04.jpg"
+                  alt="Support scholarships through donations"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-primary mb-4">Donate</h3>
+              <p className="text-lg leading-relaxed mb-4">
+                More scholarships mean everything for many needy who have a dream but cannot make it due to the financial crisis.
+              </p>
+              <p className="text-lg leading-relaxed mb-6">
+                Help them reach their dream.
+              </p>
+              <Link 
+                href="/donate" 
+                className="inline-block bg-accent text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition-colors"
+              >
+                Donate Now
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -142,20 +275,20 @@ export default function ScholarshipPage() {
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-2xl md:text-3xl font-serif font-bold mb-6">Support Our Scholarship Programs</h2>
           <p className="text-lg mb-8">
-            Your contribution helps provide educational opportunities for survivors of human trafficking.
+            Your contribution helps provide educational opportunities and creates lasting change in young lives.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/donate" 
-              className="bg-accent text-clean px-6 py-3 rounded-full hover:bg-opacity-90 transition-colors"
+              className="bg-accent text-clean px-8 py-4 rounded-full hover:bg-opacity-90 transition-colors font-semibold"
             >
-              Donate Now
+              Make a Donation
             </Link>
             <Link 
               href="/contact" 
-              className="bg-transparent border-2 border-clean text-clean px-6 py-3 rounded-full hover:bg-white/10 transition-colors"
+              className="bg-transparent border-2 border-clean text-clean px-8 py-4 rounded-full hover:bg-white/10 transition-colors font-semibold"
             >
-              Contact Us
+              Volunteer With Us
             </Link>
           </div>
         </div>
